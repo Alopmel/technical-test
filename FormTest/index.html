@@ -8,18 +8,37 @@
     <title>Document</title>
 </head>
 <body>
-<button>Open Form</button>
-<button id="open-modal">Open Form</button>
-<section id="form">
-    <form>
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone">
-    </form>
+    
+<section class="container">
+    <button id="open-modal">Open Form</button>
+</section>    
+
+<section id="popup" class="modal-bg">
+    <div id="form" class="popup">
+        <form>
+            <label class="close">x</label>
+            <h1>Añade tu información</h1>
+            <div class="input-control">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required>
+                <div class="error"></div>
+            </div>  
+            <button type="submit">Enviar</button>   
+        </form>
+    </div>
+        
 </section>
 <script src="script.js"></script>
 </body>
 </html>
+
